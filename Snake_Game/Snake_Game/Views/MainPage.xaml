@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Snake_Game.MainPage"
+             BackgroundColor="#4b752d"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#4b752d">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,10,0">
+                        <Image x:Name="imageFood" WidthRequest="50" />
+                        <Label x:Name="lblScore" Text="0" TextColor="Wheat" VerticalTextAlignment="Center" FontSize="Large" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Image WidthRequest="50" Source="trophy.png" />
+                        <Label x:Name="lblBetterScore" TextColor="Wheat" VerticalTextAlignment="Center" FontSize="Large" />
+                    </StackLayout>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand">
+                    <ImageButton x:Name="btnPause" IsEnabled="false" WidthRequest="40" Clicked="BtnPause_Clicked" BackgroundColor="Transparent" Source="pause.png" />
+                </StackLayout>
+            </StackLayout>
+
+        </Frame>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" x:Name="AbsoluteLayoutAreaGame" BackgroundColor="#abd750" Margin="15">
+            <AbsoluteLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped" />
+                <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped" />
+                <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped" />
+            </AbsoluteLayout.GestureRecognizers>
+            <Image x:Name="imageTouch" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.2,100,100" />
+            <Button x:Name="btnStart" Text="Start" HorizontalOptions="CenterAndExpand"  Clicked="BtnStart_Clicked"  CornerRadius="5" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0.5,0.7,100,50"/>
+        </AbsoluteLayout>
+        <Frame x:Name="btnButtons" BackgroundColor="Transparent" Padding="0" IsVisible="false">
+            <StackLayout>
+                <Button x:Name="btnUp" Text="Up" FontSize="Large"  CornerRadius="5" Clicked="BtnUp_Clicked" HorizontalOptions="CenterAndExpand" IsEnabled="False" BorderColor="Black" BorderWidth="1.5"/>
+                <StackLayout Orientation="Horizontal" >
+                    <Button x:Name="btnLeft" Text="Left" FontSize="Large"  HorizontalOptions="CenterAndExpand" Clicked="BtnLeft_Clicked" CornerRadius="5" IsEnabled="False" BorderColor="Black" BorderWidth="1.5"/>
+                    <Button FontSize="Large"  HorizontalOptions="CenterAndExpand" CornerRadius="50"/>
+                    <Button x:Name="btnRight" Text="Right" FontSize="Large" HorizontalOptions="CenterAndExpand" Clicked="BtnRight_Clicked"  CornerRadius="5" IsEnabled="False" BorderColor="Black" BorderWidth="1.5"/>
+                </StackLayout>
+                <Button x:Name="btnDown" Text="Down" FontSize="Large"  HorizontalOptions="CenterAndExpand" Clicked="BtnDown_Clicked" CornerRadius="5" IsEnabled="False" BorderColor="Black" BorderWidth="1.5"/>
+            </StackLayout>
+        </Frame>
+        <Label Text="@2022 KIGAMES" HorizontalTextAlignment="Center" TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

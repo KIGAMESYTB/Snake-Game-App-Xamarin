@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake_Game.Android", "Snake_Game\Snake_Game.Android\Snake_Game.Android.csproj", "{2A1482B6-AC7E-49D3-8597-95B167CA02E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snake_Game", "Snake_Game\Snake_Game\Snake_Game.csproj", "{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1482B6-AC7E-49D3-8597-95B167CA02E5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187D9AD6-87D1-4A1A-B33F-1A208FFDC5B8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A118517D-5ECB-41E6-AF7F-650296578096}
+	EndGlobalSection
+EndGlobal

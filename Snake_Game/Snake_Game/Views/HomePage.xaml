@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Snake_Game.HomePage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout Direction="Column" AlignContent="Center" JustifyContent="SpaceEvenly" VerticalOptions="FillAndExpand">
+                <Image Source="ImageSnakeHome.png"/>
+                <StackLayout>
+                    <Label x:Name="lblPlay" Text="Play" BackgroundColor="Red" FontSize="50" TextColor="Azure" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="lblSettings" Text="Settings" BackgroundColor="Transparent" FontSize="30" TextColor="Azure" HorizontalTextAlignment="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer AutomationId="5" Tapped="OnTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="lblDisplay" Text="Display"  BackgroundColor="Transparent" FontSize="30" TextColor="Azure" HorizontalTextAlignment="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="lblHighScore" Text="High Score"   BackgroundColor="Transparent" FontSize="30" TextColor="Azure" HorizontalTextAlignment="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label x:Name="lblExit" Text="Exit"  BackgroundColor="Transparent" FontSize="30" TextColor="Azure" HorizontalTextAlignment="Center" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </FlexLayout>
+            <Label  Text="@2022  Kigames" TextColor="White" VerticalOptions="End" HorizontalTextAlignment="Center" />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

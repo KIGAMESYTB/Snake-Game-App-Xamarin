@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Size="250,350"
+             IsLightDismissEnabled="False"
+             x:Class="Snake_Game.Views.PausePage"
+             >
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <FlexLayout Direction="Column"  JustifyContent="SpaceBetween" Margin="10" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Pause" FontSize="30" HorizontalTextAlignment="Center"  HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Music" HorizontalTextAlignment="Center" FontSize="20"/>
+                    <ImageButton x:Name="btnMusic" Source="audio.png" WidthRequest="40" BackgroundColor="Transparent" Clicked="BtnMusic_Clicked"  HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Sfx" HorizontalTextAlignment="Center" FontSize="20"/>
+                    <ImageButton x:Name="btnSfx" Source="audio.png" WidthRequest="40" BackgroundColor="Transparent" Clicked="BtnSfx_Clicked"  HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Home" CornerRadius="5" Clicked="BtnHome_Clicked"  BorderWidth="1.5" BorderColor="Black" BackgroundColor="WhiteSmoke" TextColor="Black" FontSize="20" />
+                <Button Text="Restart" CornerRadius="5" Clicked="BtnRestart_Clicked"  BorderWidth="1.5" BorderColor="Black" BackgroundColor="WhiteSmoke" TextColor="Black" FontSize="20"  />
+            </StackLayout>
+            <Button Text="Close" TextTransform="Default" FontSize="20" BackgroundColor="White" Clicked="BtnClose_Clicked"  HorizontalOptions="Center"/>
+        </FlexLayout>
+    </StackLayout>
+</xct:Popup>

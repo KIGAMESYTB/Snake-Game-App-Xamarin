@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Size="250,350"
+             IsLightDismissEnabled="False"
+             x:Class="Snake_Game.Views.GameOverPage">
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <FlexLayout Direction="Column"  JustifyContent="SpaceBetween" Margin="10" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label Text="Game Over" FontSize="30" HorizontalTextAlignment="Center"  HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Score" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="lblScore" Text="0" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="High Score" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="lblBetterScore" Text="0" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Home" CornerRadius="5" Clicked="BtnHome_Clicked" BorderWidth="1.5" BorderColor="Black" BackgroundColor="WhiteSmoke" TextColor="Black" FontSize="20" />
+                <Button Text="Restart" CornerRadius="5" Clicked="BtnRestart_Clicked"  BorderWidth="1.5" BorderColor="Black" BackgroundColor="WhiteSmoke" TextColor="Black" FontSize="20"  />
+            </StackLayout>
+        </FlexLayout>
+    </StackLayout>
+</xct:Popup>
